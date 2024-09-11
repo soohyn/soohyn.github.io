@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FC } from "react";
 import SearchInput from "./SearchInput";
+import DarkmodeButton from "./DarkmodeButton";
 
 interface Router {
   label: string;
@@ -43,8 +44,9 @@ const Header: FC = () => {
         <ul className="flex flex-row items-center">{routersMap}</ul>
       </nav>
 
-      <div className="flex flex-row">
+      <div className="flex flex-row gap-3">
         <SearchInput />
+        <DarkmodeButton />
       </div>
     </header>
   );
