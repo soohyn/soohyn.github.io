@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "soohyn.log()",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body>
         <Header />
         <div className="max-w-screen-xl px-5 mx-auto">{children}</div>
+        <Footer />
       </body>
     </html>
   );
