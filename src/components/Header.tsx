@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FC } from "react";
+import SearchInput from "./SearchInput";
 
 interface Router {
   label: string;
@@ -42,7 +43,9 @@ const Header: FC = () => {
         <ul className="flex flex-row items-center">{routersMap}</ul>
       </nav>
 
-      <div className="flex flex-row"></div>
+      <div className="flex flex-row">
+        <SearchInput />
+      </div>
     </header>
   );
 };
