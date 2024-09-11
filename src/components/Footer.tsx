@@ -3,7 +3,7 @@ import Contacts from "./Contacts";
 
 const Footer: FC = () => {
   return (
-    <footer className="px-5 pt-10 pb-20 flex flex-row justify-between">
+    <footer className="px-5 pt-10 pb-20 flex flex-row justify-between text-gray-500">
       <span>Copyright © 2024 Soohyeon All rights reserved.</span>
       <Contacts />
     </footer>
