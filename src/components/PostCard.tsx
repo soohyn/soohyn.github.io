@@ -20,7 +20,7 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
 
   return (
     <li className="flex flex-col hover:opacity-60 active:scale-95 transition-all cursor-pointer ease-in-out">
-      <Link href={`post/detail/${post.id}`}>
+      <Link href={`posts/detail/${post.id}`}>
         <div className="relative overflow-hidden rounded-md">
           <Image src="" alt={post.id} className="bg-gray-200 h-48" />
         </div>
