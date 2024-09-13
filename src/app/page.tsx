@@ -1,4 +1,5 @@
 import Contacts from "@/components/Contacts";
+import Posts from "@/components/Posts";
 import Profile from "@/components/Profile";
 import { NextPage } from "next";
 
@@ -14,7 +15,9 @@ const Home: NextPage = () => {
         <Contacts />
       </section>
 
-      <section className="flex flex-col mt-10 "></section>
+      <section className="flex flex-col mt-10 ">
+        <Posts type="recent" />
+      </section>
     </div>
   );
 };
