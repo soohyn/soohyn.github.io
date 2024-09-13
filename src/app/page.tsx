@@ -9,7 +9,7 @@ const Home: NextPage = () => {
         <Profile />
 
         <div className="p-4">
-          <div className="h-0.5 w-4 bg-gray-100 rounded-full"></div>
+          <div className="h-0.5 w-4 bg-gray-100 dark:bg-gray-800 rounded-full"></div>
         </div>
         <Contacts />
       </section>

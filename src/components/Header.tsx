@@ -37,7 +37,9 @@ const Header: FC = () => {
   return (
     <header className="flex flex-row items-center px-5 py-4 gap-3">
       <h1 className="text-xl font-extrabold cursor-pointer">
-        <a href="/">{"soohyn.log()"}</a>
+        <a className="dark:text-white" href="/">
+          {"soohyn.log()"}
+        </a>
       </h1>
 
       <nav className="w-full">

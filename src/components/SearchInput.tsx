@@ -17,7 +17,7 @@ const SearchInput: FC = () => {
 
   return (
     <form
-      className="flex flex-row items-center bg-gray-100 py-1 pl-4 pr-3 rounded-full w-60 gap-2"
+      className="flex flex-row items-center bg-gray-100 dark:bg-gray-800 py-1 pl-4 pr-3 rounded-full w-60 gap-2"
       onSubmit={onClickSearch}
     >
       <input
