@@ -6,9 +6,7 @@ import IconSun from "../assets/sun.svg";
 import IconMoon from "../assets/moon.svg";
 
 const DarkmodeButton: FC = () => {
-  const [isDark, setIsDark] = useState<boolean>(
-    localStorage.getItem("theme") === "dark"
-  );
+  const [isDark, setIsDark] = useState<boolean>();
 
   const onClickDarkmode = () => {
     setIsDark((prev) => !prev);
@@ -20,7 +18,7 @@ const DarkmodeButton: FC = () => {
     }
   };
 
-  const prepare = () => {
+  const getTheme = () => {
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) &&
@@ -32,8 +30,16 @@ const DarkmodeButton: FC = () => {
     }
   };
 
+  const prepare = () => {
+    setIsDark(localStorage.getItem("theme") === "dark");
+  };
+
   useEffect(() => {
     prepare();
+  }, []);
+
+  useEffect(() => {
+    getTheme();
   }, [isDark]);
 
   return (
