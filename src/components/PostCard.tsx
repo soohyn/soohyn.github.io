@@ -22,7 +22,11 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
     <li className="flex flex-col hover:opacity-60 active:scale-95 transition-all cursor-pointer ease-in-out">
       <Link href={`posts/detail/${post.id}`}>
         <div className="relative overflow-hidden rounded-md">
-          <Image src="" alt={post.id} className="bg-gray-200 h-48" />
+          <Image
+            src={post.thumbnail}
+            alt={post.id}
+            className="bg-gray-200 h-48"
+          />
         </div>
 
         <div className="flex flex-col gap-1 p-2">
