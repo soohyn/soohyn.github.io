@@ -1,5 +1,5 @@
 import Contacts from "@/components/Contacts";
-import Posts from "@/components/Posts";
+import RecentPosts from "@/components/RecentPosts";
 import Profile from "@/components/Profile";
 import { NextPage } from "next";
 
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       </section>
 
       <section className="flex flex-col mt-10 ">
-        <Posts type="recent" />
+        <RecentPosts />
       </section>
     </div>
   );
